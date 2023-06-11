@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>My Blog</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <style>
+	p {
+	  margin-bottom: 10px;
+	}
+	ol {
+	  margin-left: 20px;
+	}
+    </style>
+</head>
+
+<body>
+    <!-- navigation -->
+    <header>
+        <h1>
+            <a href="/">
+                JEFF HASCH'S CYBER SPEAK
+            </a>
+        </h1>
+        <a href="mailto:jevhasch@outlook.com" class="button">Send Email</a>
+        <a href="https://linkedin.com/in/jeff-hasch-ev13140812" class="linkedin"><img
+                src="https://drive.google.com/uc?export=view&id=14GW-oOoadlMxUGs5FvKkgGkrihtkFyUh" alt="LinkedIn logo"
+                height="45px"></a>
+    </header>
+
+
+    <!-- "About" section -->
+    <section id="about" class="intro">
+        <!--Replace with your own image-->
+        <img src="https://drive.google.com/uc?export=view&id=1skBVEHRuy7K4JZNUq2WR-CgwakolgCJU"
+            alt="Robert Smith picture" height=375px;>
+        <h2 class="section-title">Hi, I'm Jeff!</h2>
+        <p> Welcome to my Cyber Blog!  What I love about cybersecurity is the numerous paths and roles that are needed to make your cyber world secure. 
+	    The insatiable desire to learn and grow in the cybersecurity field is what drives me, and I look forward to learning from everyone out there! 
+            
+            <br><br>
+           
+           
+        </p>
+    </section>
+
+
+    <!-- "Blog Posts" section -->
+    <section id="blog-post-collection" class="blog-posts">
+        <h2 class="section-title">Blog Posts</h2>
+        <article class="blog-post">
+            <img src="https://drive.google.com/uc?export=view&id=1ueyXZqXdMHEawBDTGLVD5-Kdp1t5DUZy&rl" alt="Image 1">
+
+            <div class="blog">
+                <h3>The Risks of Public Wi-Fi</h3>
+                <h4>Hotspots and Unsecured Wi-Fi</h4>
+                <p>Our world has been more connected than ever before, and with the need for mobility and constant access to that world, 
+Public Wi-Fi and Hotspots have become a necessity for most people and businesses.  But what are the dangers of connecting 
+to these unsecured networks?</p>
+
+		<p>Cybercriminals use a combination of technical know-how and free tools to sneak into unsecured networks and steal 
+sensitive information. This could include passwords, banking information, or personal data that can be used for identity
+theft.  Attacks such as packet sniffing and Man-in-the-middle are used by hackers to get access to personal information
+in order to steal your identity or access your bank accounts. </p>
+
+		<p>Other risks include malware attacks that are disruptive to lives and businesses, such as ransomware attacks and gaining 
+remote access to your device that can be triggered by the bad actor at any time.</p>
+
+		<p>Some security steps that you can take to mitigate these risks before, during and after connecting to public wi-fis are: 
+		   <ol>
+		        1. Turn on your VPN before connecting<br>
+			2. Make sure your antivirus is up and running <br>
+			3. Log out of any account you don't need to use while connected. <br>
+			4. Avoid filling in sensitive information such as passwords or personal details. <br>
+			5. Scan your device for malware after disconnecting. <br>
+			6. Restart your device to help sever any connections to a potential hacker. <br>
+			7. Purge any networks you don't need from your preferred network list. 
+		   </ol>
+                </p>
+		<p>In summary, connecting to mobile hotspots and public Wi-Fi are just part of life whether it be for personal or business
+		   needs.  If you can avoid connecting to an unsecured network, it's highly advised but there are security measures
+		   you can easily follow to help prevent your data from getting into the wrong hands!
+            </div>
+        </article>
+
+
+        <!-- second blog post -->
+        <article class="blog-post">
+            <img src="https://drive.google.com/uc?export=view&id=1PJrGBg8LgxHAzwhfM6drWR5fdfNQkRE4" alt="Image-2">
+            <div class="blog">
+                <h3>What is a Honeypot?</h3>
+                <h4>Network Security</h4>
+                <p>Whenever I hear the term <q>honeypot</q>, I immediately think of Winnie the Pooh with his head stuck in the honey jar! But what 
+		   does Winnie the Pooh and Network Security have to do with each other?</p>
+
+		<p>A honeypot is essentially a network-attached system used as a decoy to lure cyber attackers to detect, deflect and study 
+		   hacking attempts.  It represents itself on the internet as a potential target, usually a server or high-value asset, and 
+		   gathers information to notify defenders of attempts to access the honeypot by unauthorized users.</p>
+
+		<p>Honeypot systems use hardened operating systems with extra security measures to minimize their exposure to threats and 
+		   are typically placed within DMZ zones on a network to keep them isolated from the production network.  They are configured 
+		   to appear to have exploitable vulnerabilities.  For example, a honeypot system might appear to respond to Server Message 
+		   Block (SMB) protocol requests which was used by the <a href="https://www.techtarget.com/searchsecurity/definition/WannaCry-ransomware?Offer=abMeterCharCount_var1">WannaCry ransomware</a>
+		   attack and represent itself as an enterprise database server.</p>
+
+		<p>The benefits of honeypots include can include real data collection from actual attacks that give cybersecurity analysts lots of
+		   useful information.  Fewer false positives when it comes to generated alerts, since legitimate users have no reason to access 
+		   the honeypot. Encryption circumvention, meaning a honeypot will still capture malicious activity, even if an attacker is using
+		   encryption.</p> 
+
+		<p>Some of the disadvantages are limited data as honeypots only collect information when an attack occurs.  They are set up on an
+		   isolated network so if attackers suspect a network is a honeypot, they will avoid it.  Experienced hackers can often differentiate
+		   a production system from a decoy.</p> 
+
+		<p>The cost of maintaining a honeypot can be high, due to specialized skills to implement and administer a system as a decoy,
+		   while also preventing attackers from gaining access to any production systems.  The cost of not having a honeypot implemented
+		   properly could be even higher however if a bad actor gains full root access to your systems.</p> 
+
+		<p>My final thought will be a question for you out there, are honeypots worth the expense? Let me know your thoughts.</p> 
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>
